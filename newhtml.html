@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>third</title>
+	<script type="text/javascript">
+		function fun()
+		{
+			var a=document.getElementById("txt1").value;
+			var b=document.getElementById("txt2").value;
+			var c=document.getElementById("txt3").value;
+			var d=document.getElementById("txt4").value;
+			var e=document.getElementById("txt5").value;
+			var f=parseInt(a) + parseInt(b) + parseInt(c) + parseInt(d) + parseInt(e);
+			document.getElementById("demo").innerHTML="total=" + f;
+			//var percent=f/5;
+			//document.getElementById("demo").innerHTML="percent="+ percent;
+
+		}
+	</script>
+	<style type="text/css">
+		.div1
+		{
+			position: absolute;
+			top: 20px;
+			border-radius: 3px;
+			border: 10px solid greenyellow;
+			height: 500px;
+			left: 30%;
+			width: 40%;
+			/*background-color: green;*/
+		}
+	</style>
+</head>
+<body>
+	<div class="div1">
+		<table class="table">
+			<tr>
+				<td align="left">Physics marks</td>
+				<td align="right" ><input type="text" id="txt1"></td>
+			</tr>
+			<tr>
+				<td align="left">Chemistry marks</td>
+				<td align="right" ><input type="text" id="txt2"></td>
+			</tr>
+			<tr>
+				<td align="left">English marks</td>
+				<td align="right" ><input type="text" id="txt3"></td>
+			</tr>
+			<tr>
+				<td align="left">Hindi marks</td>
+				<td align="right" ><input type="text" id="txt4"></td>
+			</tr>
+			<tr>
+				<td align="left">Maths marks</td>
+				<td align="right" ><input type="text" id="txt5"></td>
+			</tr>
+			<tr>
+				<td align="right" ><input type="submit" value="click here" onclick="fun()"></td>
+			</tr>
+			<tr>
+				<td align="right"><p id="demo"></p></td>
+			</tr>
+
+		</table>
+		
+	</div>
+
+</body>
+</html>

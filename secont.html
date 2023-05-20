@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Subject Marks Total</title>
+	<script>
+		function calculateTotal() {
+			var subject1 = parseInt(document.getElementById("subject1").value);
+			var subject2 = parseInt(document.getElementById("subject2").value);
+			var subject3 = parseInt(document.getElementById("subject3").value);
+			var subject4 = parseInt(document.getElementById("subject4").value);
+			var subject5 = parseInt(document.getElementById("subject5").value);
+			var total = subject1 + subject2 + subject3 + subject4 + subject5;
+			document.getElementById("total").innerHTML = "Total marks: " + total;
+		}
+	</script>
+</head>
+<body>
+	<h1>Enter Subject Marks</h1>
+	<p>Subject 1: <input type="number" id="subject1"></p>
+	<p>Subject 2: <input type="number" id="subject2"></p>
+	<p>Subject 3: <input type="number" id="subject3"></p>
+	<p>Subject 4: <input type="number" id="subject4"></p>
+	<p>Subject 5: <input type="number" id="subject5"></p>
+	<button onclick="calculateTotal()">Calculate Total</button>
+	<p id="total"></p>
+</body>
+</html>
